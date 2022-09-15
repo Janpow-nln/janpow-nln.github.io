@@ -40,8 +40,9 @@
 
     // example:
     createCollectable(type.steve, 200, 170, 6, 0.7);
-
-    // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
+    createCollectable(type.kennedi,200,170);
+    createCollectable(type.db,300, 200);
+    // ALL YOUR CODE )GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
   }
   collectable.init = init;
