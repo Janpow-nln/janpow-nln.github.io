@@ -84,7 +84,7 @@ $(document).ready(function () {
 
   function staticDisplay() {
     // TODO 3-b: call your handleStatic function
-    handleStatic(dataShapes["shape"]);
+    handleStatic(dataShapes[currentIndex]);
   }
 
   function goodDisplay() {
