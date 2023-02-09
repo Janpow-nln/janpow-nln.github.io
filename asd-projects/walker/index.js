@@ -56,10 +56,10 @@ function runProgram(){
   */
   function newFrame() {
     repositionGameitem();
+    repositionSecondGameitem();
     setBoundary();
     redrawGameItem();
     redrawSecondGameItem();
-    repositionSecondGameitem();
   }
   
   /* 
