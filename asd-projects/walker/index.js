@@ -55,9 +55,9 @@ function runProgram(){
   by calling this function and executing the code inside.
   */
   function newFrame() {
-    redrawGameItem();
-    setBoundary();
     repositionGameitem();
+    setBoundary();
+    redrawGameItem();
     redrawSecondGameItem();
     repositionSecondGameitem();
   }
