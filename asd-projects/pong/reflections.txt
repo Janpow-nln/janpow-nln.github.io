@@ -1,0 +1,42 @@
+*User Story / Gameplay*
+Describe the gameplay
+-   pong is a two player game where each player is given a paddle and have to hit the
+    ball across the board until the oppsite player misses then you'll score a point.
+What are the conditions when the game begins?
+-   if player 1 hits the ball towards player 2 and player 2 misses the ball player 1 
+    will score a point.
+Does the game have an end? If so, what are the conditions for when it ends?
+-   yes the  game has a end. The game will end when one player reaches 11 points. 
+What ifs will there be?
+-   if the player 1 hits the ball towards player 2 and player 2 misses player 1 gains
+     a point
+-   if a player reaches 11 points then the game will end.
+
+*Visual Game Components*
+What are the visual game components? For example, in Bouncing Box, the game components 
+were the board and 
+the box.
+Which will be static? (the board)
+Which will be animated? (the box)
+-   the visual game components are the the right paddle, left paddle and the ball.
+    the board will be static while the paddles and ball are animated.
+What data will you need to manage each game component? For example, in Bouncing Box, the
+ data values were 
+positionX, speedX, and points.
+-   the data that i will manage are the score points, speed of the ball, and the speed 
+    of the paddles
+    
+*Events / Logic*
+What events will occur in this game? (timer events, keyboard events, clicking events?)
+-   keyboard and clicking events will occur in the game.
+How do those events affect the data of the program?
+-   the keyboard event will allow the players move the paddles while clicking will
+     allow the user to start the game.
+For each "event", write out the high-level logic of what will happen. It is better (and 
+tricky) to be as
+ specific as you can while remaining high-level!
+ -  to start the game one of the players click on the game to start player 1 will use 
+    'W' and 'S' keys to move the left paddle and player 2 will use 'up arrow' and 
+    'down arrow' keys to move the right paddle. once the game the players will hit the 
+    ball across the board until one player misses the ball then other player will gain 
+    a point. the game will continue until one player reaches 11 points then game over.
