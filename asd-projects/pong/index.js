@@ -19,8 +19,8 @@ function runProgram() {
 
 
   // Game Item Objects
-  let leftPaddle = GameComponent("#leftpaddle");
-  let rightPaddle = GameComponent("#rightpaddle");
+  let leftPaddle = GameComponent("#leftPaddle");
+  let rightPaddle = GameComponent("#rightPaddle");
   let ball = GameComponent("#ball");
 
   const BOARD_WIDTH = $("#board").width();
@@ -43,7 +43,7 @@ function runProgram() {
 
   function newFrame() {
     moveObject(leftPaddle);
-    // moveObject(rightPaddle);
+    moveObject(rightPaddle);
     // moveObject(ball);
   }
 
@@ -81,8 +81,8 @@ function runProgram() {
   function GameComponent(id) {
     var gameComponentInstance = {}; // creating an emtpy object 
     gameComponentInstance.id = id; // add key: id and value: id to the object
-    gameComponentInstance.x = parseFloat($(id).css('left')); // add key: x value: use parseFloat to get the num of left position
-    gameComponentInstance.y = parseFloat($(id).css('top')); // add key: y value: use parseFloat to get the num of top position
+    gameComponentInstance.x = Number($(id).css('left').replace(/[^-\d\.]/g, '')); // add key: x value: use parseFloat to get the num of left position
+    gameComponentInstance.y = Number($(id).css('top').replace(/[^-\d\.]/g, '')); // add key: y value: use parseFloat to get the num of top position
     gameComponentInstance.width = $(id).width(); // add key: width value: getting width from css
     gameComponentInstance.height = $(id).height(); // add key: height value: getting height from css
     gameComponentInstance.speedX = 0; // add key: speedX value: 0 starting value 
@@ -104,7 +104,6 @@ function runProgram() {
     $(gameComponent.id).css("top", gameComponent.y); // to reposition the game item up / down
     gameComponent.x = parseFloat(gameComponent.x) + gameComponent.speedX;
     $(gameComponent.id).css("left", gameComponent.x); // to reposition the game item left / right
-    console.log(gameComponent.y);
   }
 
   function wallCollision(gameComponent) {
