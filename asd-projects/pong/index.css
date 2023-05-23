@@ -21,7 +21,7 @@ body {
   top: 100px;   /* Uncomment if you want to set a "starting" position */
 }
 
-#rightPaddle {
+#leftPaddle {
   background-color: red;
   border-radius: 15%;
   width: 20px;
@@ -31,7 +31,7 @@ body {
   top: 150px;
 }
 
-#leftPaddle {
+#rightPaddle {
   background-color: red;
   border-radius: 15%;
   width: 20px;
@@ -58,5 +58,25 @@ body {
   position: absolute;
   left: 110px;
   top: 0px;
+}
+
+#rightScore {
+  text-align: center;
+}
+
+#leftScore {
+  text-align: center;
+}
+#endGame {
+  background-color: white;
+  width: 400px;
+  height:100px;
+  border-radius: 1%; 
+  text-align: center;
+  font-size: xx-large;
+  position: absolute;
+  left: 20px;
+  top: 150px;
+
   
 }
